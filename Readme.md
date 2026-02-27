@@ -2,7 +2,16 @@ Bitespeed Identity Reconciliation (Backend)
 
 A backend service that identifies and links customer identities across multiple purchases using email and phone number, built for the Bitespeed Backend Task.
 
-API Endpoint
+
+## Tech Stack
+- Node.js
+- Express
+- PostgreSQL
+- Prisma ORM
+- Hosted on Render
+
+
+## API Endpoint
 POST /identify
 
 Request Body (JSON):
@@ -29,10 +38,12 @@ Install dependencies:
 bash
 npm install
 
+npx prisma migrate dev
+
 Run the server:
 
 bash
 npm run dev
 
-Live API
-POST https://<your-app-name>.onrender.com/identify
+## Live API
+POST https://bitespeed-backend-nswn.onrender.com
